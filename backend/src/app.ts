@@ -14,6 +14,11 @@ mongoose.connect(process.env.MONGODB_URI as string)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
-// TODO: Add routes here
+
+
+import authRoutes from './routes/auth';
+import resumeRoutes from './routes/resume';
+app.use('/api/auth', authRoutes);
+app.use('/api/resumes', resumeRoutes);
 
 export default app;
