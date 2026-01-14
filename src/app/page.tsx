@@ -11,7 +11,7 @@ export default function HomePage() {
           Create, improve, and tailor resumes for Software, QA, and Data roles using AI-powered insights.
         </p>
         <div className="flex gap-4 mb-12">
-          <Link href="/dashboard">
+          <Link href="/ai-resume">
             <button className="bg-blue-600 text-white px-6 py-3 rounded font-semibold shadow hover:bg-blue-700 transition">Get Started</button>
           </Link>
           <Link href="/dashboard">
